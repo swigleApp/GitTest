@@ -1,4 +1,27 @@
 apply plugin: 'com.android.library'
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'testLib'
+
+    publishedGroupId = 'com.wishnut.app.testlib'
+    libraryName = 'testlib'
+    artifact = 'testlib'
+
+    libraryDescription = 'A test library for Android'
+
+    siteUrl = 'https://github.com/swigleApp/GitTest'
+    gitUrl = 'https://github.com/swigleApp/GitTest.git'
+
+    libraryVersion = '0.9.3'
+
+    developerId = 'swigleapp'
+    developerName = 'Swigle App'
+    developerEmail = 'swigleapp@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
 
 android {
     compileSdkVersion 23
@@ -23,4 +46,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.2.0'
     compile 'com.android.support:design:23.2.0'
+
 }
